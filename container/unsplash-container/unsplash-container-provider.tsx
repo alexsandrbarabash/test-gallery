@@ -24,7 +24,7 @@ const UnsplashContainerProvider: React.FC = ({ children }) => {
     console.log(ACCESS_TOKEN);
     axios
       .get("https://api.unsplash.com/photos/random/", {
-        params: { client_id: ACCESS_TOKEN, count: 30 },
+        params: { client_id: "ujO1lshYTycRUhw_X0euMHd8XAvYRiPTrX16HTrFcJw", count: 30 },
       })
       .then((res) => updateState(res.data))
       .then((data) => setPhotos(data))
